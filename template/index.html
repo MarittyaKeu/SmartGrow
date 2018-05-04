@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Smart Grow!</title>
+	<!-- Bootstrap CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+	
+	<div class="jumbotron text-center">
+		<h1 style="color:green;">Welcome to Smart Grow!</h1>
+		<p>Todays date and time is <p id="date"></p><p id="time"></p></p>
+	</div>
+
+	<h2> {{text}} </h2>
+	
+	<A HREF=/valve><button class="btn btn-primary">Water Plant</button></A>
+	<A HREF=/soil_reading><button class="btn btn-success">Soil Moist Reading</button></A>
+	<A HREF=/auto_plant><button style="color:white;" class="btn btn-warning">Auto</button></A>
+	<br><br><br>
+	<A HREF=/logout><button class="btn btn-danger">Log Out</button></A>
+</body>
+
+<script>
+	n = new Date();
+	y = n.getFullYear();
+	m = n.getMonth() + 1;
+	d = n.getDate();
+	document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+
+	time = new Date();
+	hour = time.getHours();
+	minutes = time.getMinutes();
+	seconds = time.getSeconds();
+	document.getElementById("time").innerHTML = hour + ":" + minutes + ":" + seconds;
+</script>
+</html>

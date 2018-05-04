@@ -1,0 +1,26 @@
+
+<html>
+<head>
+	<title>Log in Screen</title>
+	<!-- Bootstrap CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+	{% block body %}
+	{% if session['logged_in'] %}
+	<p> You're logged in already!</p>
+	{% else %}
+	<form class="form-group" style="margin:50px" action="/Authenticate" method="post">
+		<h1 style="color:green;">Login Page</h1>
+		<br>
+		Username: <input type="username" class="form-control" style="width:150px" name="username" placeholder="username" value="{{request.form['username']}}">
+		Password: <input type="password" class="form-control" style="width:150px" name="password" placeholder="password" value="{{request.form['password']}}">
+		<br/>
+		<input type="submit" class="btn btn-success"value="Log In">
+	</form>
+	{% endif %}
+	{% endblock %}
+</body>
+</html>
+
