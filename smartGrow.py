@@ -85,8 +85,8 @@ def auto():
                        [''],
                        'Warning',
                        'The soil moisture level is low, and we just watered your plant!!!!!\n\nThe SmartGrow Team',
-                       'marittyakeu@gmail.com',
-                       'PaulPierce34')
+                       'gmail',
+                       'password')
         reading = 'soil moisture level is {} and an e-mail was sent to you!'.format(grow.soil_moist_level())
         grow.activate_valve()
         
