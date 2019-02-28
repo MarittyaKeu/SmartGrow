@@ -17,8 +17,9 @@ My project was created and written in Python to help automate the agricultural i
 8. Vegetronix Soil Moisture Sensor
 
 # Software/Packages Used:
-1. MariaDB – database used to store login credentials
-2. Flask – Python web Microframework used to make connection to DB
-3. SMTP – TCP/IP protocol for sending and receiving e-mail
-4. Bootstrap CDN
+1. MariaDB – SQL database used to store login credentials
+2. Python
+3. Flask – Python web Microframework used to make connection to DB
+4. SMTP – TCP/IP protocol for sending and receiving e-mail
+5. Bootstrap CDN
 
