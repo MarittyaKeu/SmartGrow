@@ -118,8 +118,8 @@ def auto_plant_email():
                        [''],
                        'Warning',
                        'The soil moisture level is low, and we just watered your plant!!!!!\n\nThe SmartGrow Team',
-                       'marittyakeu@gmail.com',
-                       'PaulPierce34')
+                       'e-mail',
+                       'password')
             activate_valve()
         else:
             soil_good()
